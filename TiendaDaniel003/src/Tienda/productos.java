@@ -9,5 +9,10 @@ public String getIdproductos() {
 		this.idproductos = idproductos;
 	}
 
+@Override
+	public String toString() {
+		return "productos [idproductos=" + idproductos + "]";
+	}
+
 String idproductos;
 }
