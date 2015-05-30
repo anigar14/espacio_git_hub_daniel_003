@@ -7,6 +7,11 @@ public String getFechahora() {
 	return fechahora;
 }
 
+public venta(String fechahora) {
+	super();
+	this.fechahora = fechahora;
+}
+
 @Override
 public String toString() {
 	return "venta [fechahora=" + fechahora + "]";

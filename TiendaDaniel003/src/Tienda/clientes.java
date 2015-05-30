@@ -12,6 +12,11 @@ public String getIdcliente() {
 	return idcliente;
 }
 
+public clientes(String idcliente) {
+	super();
+	this.idcliente = idcliente;
+}
+
 public void setIdcliente(String idcliente) {
 	this.idcliente = idcliente;
 }
