@@ -1,8 +1,16 @@
 package Tienda;
 
+import java.text.SimpleDateFormat;
+import java.util.*;
+
 public class principal {
 
 	public static void main(String[] args) {
+		
+		Date fechaActual = new Date();
+		SimpleDateFormat formato = new SimpleDateFormat("yyyyMMdd");
+		String cadenaFecha = formato.format(fechaActual);
+		
 		clientes cliente1= new clientes("clienteuno");
 		clientes cliente2= new clientes("clientedos");
 		clientes cliente3= new clientes("clientetres");
@@ -15,6 +23,8 @@ public class principal {
 		tiendas tienda1=new tiendas("tiendauno");
 		tiendas tienda2=new tiendas("tiendados");
 		tiendas tienda3=new tiendas("tiendatres");
+		
+		System.out.println("El cliente " +cliente1+ " a comprado " +producto1+ " al vendedor " +vendedor1+ " en la tienda " +tienda1+ " a la hora " +cadenaFecha);
 	}
 
 }
